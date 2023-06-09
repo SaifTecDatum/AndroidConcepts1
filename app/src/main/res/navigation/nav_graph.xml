@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navStartFragment">
+
+    <fragment
+        android:id="@+id/navStartFragment"
+        android:name="com.myapps.androidconcepts.Fragments.NavStartFragment"
+        android:label="Start"
+        tools:layout="@layout/fragment_nav_start">
+        <action
+            android:id="@+id/action_navStartFragment_to_navResumeFragment"
+            app:destination="@id/navResumeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navResumeFragment"
+        android:name="com.myapps.androidconcepts.Fragments.NavResumeFragment"
+        android:label="Resume"
+        tools:layout="@layout/fragment_nav_resume">
+        <action
+            android:id="@+id/action_navResumeFragment_to_navStopFragment"
+            app:destination="@id/navStopFragment"
+            app:popUpTo="@id/navStartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navStopFragment"
+        android:name="com.myapps.androidconcepts.Fragments.NavStopFragment"
+        android:label="Stop"
+        tools:layout="@layout/fragment_nav_stop">
+        <action
+            android:id="@+id/action_navStopFragment_to_navStartFragment"
+            app:destination="@id/navStartFragment" />
+    </fragment>
+</navigation>

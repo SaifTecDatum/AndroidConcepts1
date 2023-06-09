@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.myapps.androidconcepts">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".HttpCalls.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidConcepts"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+
+        <activity
+            android:name=".Activities.ChartAndroidActivity"
+            android:exported="false"
+            android:parentActivityName=".Activities.MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".z_kotlin.activities.KotlinsMapsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- android:supportsRtl="true"  //if you are building an app in Arabic, Urdu, Hebrew, etc... or any language that is written from right to left you should set android:supportsRtl to true, that's how you tell the layout to be from right to left, and The default value of this attribute is false. -->
+        <!-- android:usesCleartextTraffic="true" //Declare that this application may use cleartext traffic, such as HTTP rather than HTTPS; WebSockets rather than WebSockets Secure; -->
+
+        <activity
+            android:name=".y_MVVM_DesignPattern.activities.Original_MVVM_Activity"
+            android:exported="false"
+            android:parentActivityName=".y_MVVM_DesignPattern.MVVM_Activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".z_kotlin.activities.KotlinCameraActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".Activities.PracticeActivity"
+            android:exported="true"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.NoInternetActivity"
+            android:exported="true" />
+
+        <receiver
+            android:name=".BroadcastReceivers.NetworkChangeReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activities.FacebookAuthActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name=".Activities.WeatherActivity"
+            android:exported="true"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".z_kotlin.activities.KotlinsRetrofitActivity"
+            android:exported="true"
+            android:parentActivityName=".z_kotlin.activities.KotlinMainActivity" />
+        <activity
+            android:name=".Activities.DeviceToPC_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.NavigationComponent_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.FragToFragActivity"
+            android:exported="true" />
+        <activity
+            android:name=".y_MVVM_DesignPattern.MVVM_Activity"
+            android:exported="false"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".RxJava.FromArrayDemoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RxJava.RxJava_Operators_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".RxJava.RxJavaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.RoomDatabaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Z_MVP_DesignPattern.MVP_Activity"
+            android:exported="true" />
+
+        <service
+            android:name=".Z_BoundServiceWithMVVM.BoundService"
+            android:exported="true" />
+
+        <activity
+            android:name=".z_kotlin.activities.SecondActivity"
+            android:exported="true"
+            android:parentActivityName=".z_kotlin.activities.KotlinMainActivity" />
+        <activity
+            android:name=".z_kotlin.activities.KotlinMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Retrofit_Volley.PaginationRetroRcyclrActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Retrofit_Volley.PUT_PATCH_DELETE_RetrofitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Retrofit_Volley.AllTypesRetrofitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Retrofit_Volley.AirlinesRetrofitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Retrofit_Volley.EcommerceRetrofitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.PaymentGateway_Live_Activity"
+            android:exported="true" />
+        <!--
+<meta-data
+                android:name="com.razorpay.ApiKey"
+                android:value="rzp_test_pjKEr5RfPJmDic" />  &lt;!&ndash;weNeedLiveApiKeyWchWillGetOnlyForPublishedAppsInPlayStore.&ndash;&gt;
+        -->
+        <activity
+            android:name=".Activities.SharedPrefrncActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.CameraActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.myapps.androidconcepts.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activities.GoogleMapsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDDhaMYDSYgdX5VYBokIJETIXjQyCylKds" /> <!-- MapsApiKey:itWasGeneratedFromGoogleApiConsoleWchIsUsedToFetchTheMapsData. -->
+        <activity
+            android:name=".Activities.Payment_Gateway_Activity"
+            android:exported="true" />
+
+        <provider
+            android:name=".Content_Providers.MyContentProvider"
+            android:authorities="com.demo.user.provider"
+            android:enabled="true"
+            android:exported="true" /> <!-- hereThisContentProviderIsDummy(NotUseful),justForIdeaIHaveCreated. -->
+        <activity
+            android:name=".Content_Providers.ContentProviders_Activity"
+            android:exported="true" />
+
+        <service
+            android:name=".Services.FirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activities.Retrofit_Volley.CollapsingToolbarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.ServiceActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".Services.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activities.Retrofit_Volley.JsonVolleyActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activities.CustomViewActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activities.NinePatchActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activities.BroadcastRcvrsActivity"
+            android:exported="true" />
+
+        <receiver
+            android:name=".BroadcastReceivers.MyReceiver"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PHONE_STATE" /> <!-- callsIntentFilter -->
+
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activities.Retrofit_Volley.RetroCardViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Retrofit_Volley.RetroRecylrActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Retrofit_Volley.PostRetrofitActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Activities.AddVideoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activities.MyVideosActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" /> <!-- optional (needed if default theme has no action bar) -->
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".Activities.AdMobActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <!-- Original AdMob app ID: ca-app-pub-1071530319134784~9252761530 -->
+        <!-- Original ads not working bcoz of unPublished app, whereAs in LetsChat app its working bcoz of published app. -->
+
+        <activity
+            android:name=".Activities.SecndSQLiteActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SQLiteActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ListViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.ViewPagerActivity"
+            android:exported="true"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" />
+                <data android:host="www.saifuddin.com" />
+                <data android:scheme="http" />
+                <data android:host="www.saifuddin.com" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.GoogleLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.PhoneLoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CustomViewActivity">
+
+    <com.myapps.androidconcepts.Helpers.CustomView
+        android:id="@+id/customView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:square_Color="@color/squareColor"
+        app:square_Size="100dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dialog_bckgrnd"
+        android:padding="10dp"
+        android:text="SWAP COLOR" />
+
+</RelativeLayout>

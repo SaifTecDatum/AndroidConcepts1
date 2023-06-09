@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bckgrnd"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_subHeading_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Serial No.: "
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_ID_prsntData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/tv_subHeading_ID"
+        android:fontFamily="@font/lato"
+        android:text="10"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_subHeading_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_subHeading_ID"
+        android:fontFamily="@font/aclonica"
+        android:text="First Name: "
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_firstName_prsntData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ID_prsntData"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/tv_subHeading_firstName"
+        android:fontFamily="@font/lato"
+        android:text="Present Data"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_subHeading_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_subHeading_firstName"
+        android:fontFamily="@font/aclonica"
+        android:text="Last Name: "
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_lastName_prsntData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_firstName_prsntData"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/tv_subHeading_lastName"
+        android:fontFamily="@font/lato"
+        android:text="Present Data"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_subHeading_lastName"
+        android:layout_marginTop="20dp"
+        android:hint="Enter New First Name.."
+        app:hintTextColor="#000000">
+
+        <EditText
+            android:id="@+id/et_update_FName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/lato"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TIL_firstName"
+        android:layout_marginTop="10dp"
+        android:hint="Enter New Last Name.."
+        app:hintTextColor="#000000">
+
+        <EditText
+            android:id="@+id/et_update_LName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/lato"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Delete_roomDB_Dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TIL_lastName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/headers_frame"
+        android:drawableLeft="@drawable/ic_delete"
+        android:elevation="10dp"
+        android:fontFamily="@font/aclonica"
+        android:padding="8dp"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Update_roomDB_Dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TIL_lastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/headers_frame"
+        android:drawableLeft="@drawable/ic_add"
+        android:elevation="10dp"
+        android:fontFamily="@font/aclonica"
+        android:padding="8dp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Cancel_roomDB_Dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TIL_lastName"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/headers_frame"
+        android:drawableLeft="@drawable/ic_password"
+        android:elevation="10dp"
+        android:fontFamily="@font/aclonica"
+        android:padding="8dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/contacts_CntPrvds"
+            android:icon="@drawable/call_yellows"
+            android:title="@string/contacts_cntprvds" />
+
+        <item
+            android:id="@+id/services"
+            android:icon="@drawable/img_services"
+            android:title="@string/services" />
+
+        <item
+            android:id="@+id/rcylr_retrofit"
+            android:icon="@drawable/ic_logo_retrofit"
+            android:title="@string/recylr_retrofit" />
+    </group>
+
+    <item android:title="@string/more_items">
+        <menu>
+
+            <item
+                android:id="@+id/colpsngBar"
+                android:icon="@drawable/img_smartphone"
+                android:title="@string/collapsing_toolbar" />
+
+            <item
+                android:id="@+id/volleyJson"
+                android:icon="@drawable/img_jsonvolley"
+                android:title="@string/volley_json_db" />
+
+            <item
+                android:id="@+id/ninePatchImg"
+                android:icon="@drawable/app_logo"
+                android:title="@string/_9_patch_image" />
+
+            <item
+                android:id="@+id/nav_customView"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/custom_views" />
+
+            <item
+                android:id="@+id/paymentGateway"
+                android:icon="@drawable/ic_payment"
+                android:title="@string/payment_gateway" />
+
+            <item
+                android:id="@+id/livePayment"
+                android:icon="@drawable/ic_payment"
+                android:title="@string/live_payments" />
+
+            <item
+                android:id="@+id/paginationRetroRcyclr"
+                android:icon="@drawable/img_pagination"
+                android:title="@string/pagination_retro_rcyclr" />
+
+        </menu>
+    </item>
+
+</menu>
+

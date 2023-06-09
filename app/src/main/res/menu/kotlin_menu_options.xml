@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/retrofit"
+        android:title="@string/retrofit"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/viewPager"
+        android:title="@string/view_pager"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/listView"
+        android:title="@string/list_view"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/adMob"
+        android:title="@string/admob"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/googleMaps"
+        android:title="@string/google_maps"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/openCamera"
+        android:title="@string/open_camera"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sharedPreference"
+        android:title="@string/shared_preference"
+        app:showAsAction="never" />
+
+</menu>

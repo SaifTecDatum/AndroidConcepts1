@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_LinLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3,4">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_movieId"
+                android:layout_column="1"
+                android:gravity="center"
+                android:maxWidth="0dp"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_movieTitle"
+                android:layout_column="2"
+                android:gravity="center"
+                android:maxWidth="50dp"
+                android:maxLines="3"
+                android:padding="4dp"
+                android:text="@string/ertugrul_ghazi"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_movieDetails"
+                android:layout_column="3"
+                android:gravity="center"
+                android:maxWidth="70dp"
+                android:maxLines="7"
+                android:padding="4dp"
+                android:text="@string/true_story_of_ottoman_empire_wch_inspires_many_in_world"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_movieImdb"
+                android:layout_column="4"
+                android:gravity="center"
+                android:maxWidth="10dp"
+                android:maxLines="3"
+                android:padding="4dp"
+                android:text="@string/_10_10"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!--<View //NoMoreNeededThisView,bCozWeAddedThisProgrammaticallyUsingDividerItemDecoration
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:background="#404040" />-->
+
+</LinearLayout>

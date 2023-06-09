@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.TwoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_FragHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Second Fragment"
+            android:textColor="?attr/colorError"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/LAV_eidMubarak"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/tv_FragHeading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="eid_mubarak.json"
+            app:lottie_loop="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/LAV_loadingBar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/LAV_eidMubarak"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="loading_bar.json" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/LAV_fileTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/LAV_loadingBar"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="file_transfer.json" />
+
+    </RelativeLayout>
+</FrameLayout>

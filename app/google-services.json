@@ -1,0 +1,57 @@
+{
+  "project_info": {
+    "project_number": "697541693885",
+    "firebase_url": "https://android-concepts-86e3e-default-rtdb.firebaseio.com",
+    "project_id": "android-concepts-86e3e",
+    "storage_bucket": "android-concepts-86e3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697541693885:android:aa49b2f7e921f61eb402d4",
+        "android_client_info": {
+          "package_name": "com.myapps.androidconcepts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697541693885-0036hpd5i3uosgsg31jsasdmjib4km0a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myapps.androidconcepts",
+            "certificate_hash": "d202d27a38daee3be7c7e92a91b6ad5ec7470ba2"
+          }
+        },
+        {
+          "client_id": "697541693885-8tpefojpjcp4ro6p2lq5corhtk9qt5f2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myapps.androidconcepts",
+            "certificate_hash": "5c893dbedf923e3abfd016e3789b581d4a47c14f"
+          }
+        },
+        {
+          "client_id": "697541693885-kpug0grr0gikn0d0n0athnvd2ur4bnk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDedug8SX_e9bXnnEfexFEdSEqPv6QodxY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697541693885-kpug0grr0gikn0d0n0athnvd2ur4bnk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-1071530319134784~9252761530"
+    }
+  ],
+  "configuration_version": "1"
+}

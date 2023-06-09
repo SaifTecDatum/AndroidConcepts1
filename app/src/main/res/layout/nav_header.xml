@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/img_bckgrnd_2">
+
+    <RelativeLayout
+        android:id="@+id/relLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:src="@drawable/profile_pic"
+            app:civ_border_color="#000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/profilePic"
+            android:fontFamily="@font/aclonica"
+            android:maxLines="2"
+            android:text="Harry Potter"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_userStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_userName"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/profilePic"
+            android:fontFamily="@font/lato"
+            android:maxLines="3"
+            android:text="User Bio.."
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_mobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_userStatus"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/profilePic"
+            android:drawableLeft="@drawable/ic_call"
+            android:fontFamily="@font/lato"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:text="  +91 9494641266"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imgBtn_editUser"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:background="@android:color/transparent"
+            android:elevation="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_editprofile" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imgBtn_kotlin"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:elevation="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/kotlin" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imgBtn_RoomDB"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_roomdb" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imgBtn_brdcstRcvrs"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:elevation="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/brdcst_rcvrs" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/imgBtn_kotlin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"
+            android:background="@android:color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

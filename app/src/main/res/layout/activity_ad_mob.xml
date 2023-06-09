@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AdMobActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_View1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="FULL_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+    <!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111"  (Sample adUnitId)
+    ads:adUnitId="ca-app-pub-1071530319134784/6017359577"  (Original adUnitId)
+    Original ads not working bcoz of unPublished app, whereAs in LetsChat app its working bcoz of published app.-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_AdOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad_View1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dialog_bckgrnd"
+        android:fontFamily="@font/aclonica"
+        android:padding="10dp"
+        android:text="@string/admob_view"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dialNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_AdOpen"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dialog_bckgrnd"
+        android:fontFamily="@font/aclonica"
+        android:padding="10dp"
+        android:text="@string/dail_number"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_showLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_AdOpen"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/dialog_bckgrnd"
+        android:fontFamily="@font/aclonica"
+        android:padding="10dp"
+        android:text="@string/google_maps"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_openWebPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_showLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dialog_bckgrnd"
+        android:fontFamily="@font/aclonica"
+        android:padding="10dp"
+        android:text="@string/web_page"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view_horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="20dp"
+        android:background="@color/black"
+        android:layout_below="@id/btn_openWebPage" />
+
+    <RelativeLayout
+        android:id="@+id/executorServiceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_horizontalLine"
+        android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_randomImg"
+            android:layout_width="280dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_getImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_randomImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dialog_bckgrnd"
+            android:fontFamily="@font/aclonica"
+            android:padding="10dp"
+            android:text="@string/get_img"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_View2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="FULL_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+    <!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111"  (Sample adUnitId)
+    ads:adUnitId="ca-app-pub-1071530319134784/7531705509"  (Original adUnitId)
+    Original ads not working bcoz of unPublished app, whereAs in LetsChat app its working bcoz of published app.-->
+
+</RelativeLayout>

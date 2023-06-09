@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="@string/logout"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/viewPager"
+        android:title="@string/view_pager1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/listView"
+        android:title="@string/list_view1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sqLite"
+        android:title="@string/sqlite_db"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/SecndSQLite"
+        android:title="@string/another_sqlite"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/adMob"
+        android:title="@string/admob1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/videoPlayer"
+        android:title="@string/video_player"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/postRetrofit"
+        android:title="@string/post_retrofit"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/googleMaps"
+        android:title="@string/google_maps1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/openCamera"
+        android:title="@string/open_camera1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sharedPreference"
+        android:title="@string/shared_preference1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/eCommerceRcylrRetro"
+        android:title="@string/ecommerce_rcylr_retro"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/airlinesRcylrRetro"
+        android:title="@string/airlines_rcylr_retro"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/allTypeRetrofit"
+        android:title="@string/complete_retrofit"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/putPatchDeleteRetrofit"
+        android:title="@string/put_patch_delete_retrofit"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/MVP_designPattern"
+        android:title="@string/mvp_design_pattern1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/RxJava"
+        android:title="@string/rxjava_rxandroid"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/MVVM_designPattern"
+        android:title="@string/mvvm_design_pattern"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/FragToFrag"
+        android:title="@string/frag_to_frag_talks"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/navComponent"
+        android:title="@string/navigation_component"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/device2pc"
+        android:title="@string/device_to_pc_tcp_sockets"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/oneToAnotherApp"
+        android:title="@string/open_another_app"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/openWeather"
+        android:title="@string/open_weather"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/practicePlace"
+        android:title="@string/open_practice_place"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/android_Charts"
+        android:title="@string/android_charts"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_LinLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3,4">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_countryId"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:maxWidth="0dp"
+                android:maxLines="2"
+                android:padding="4dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_countryTitle"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:maxWidth="50dp"
+                android:maxLines="3"
+                android:padding="4dp"
+                android:text="INDIA"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_countryDescrptn"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:maxWidth="70dp"
+                android:maxLines="7"
+                android:padding="4dp"
+                android:text="Multi religious, was in south asia."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_countryGDP"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:maxWidth="10dp"
+                android:maxLines="3"
+                android:padding="4dp"
+                android:text="74 ₨"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="4dp"
+        android:background="#404040" />
+
+</LinearLayout>

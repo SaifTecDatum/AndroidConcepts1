@@ -1,0 +1,3 @@
+include ':app'
+rootProject.name = "Android Concepts"
+include ':java_lib'
